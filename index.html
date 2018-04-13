@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="boot/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>room-mates</title>
+</head>
+<body>
+<div class="content">
+    <header>
+        <div>
+            <div class="nav">
+                <h2 style="padding-left: 20px"><a href="index.html">H<span style="color:white;">O</span><span style="color: #82ca9a">O</span><span style="color: #9D81B3">O</span>MIES <i
+                        class="fa fa-home"></i></a></h2>                <nav>
+                    <ul type="none">
+                        <li><a href="#" class="fa fa-envelope  fa-envelope-open"></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="room_form.html">Rent out a room/ Room mates</a></li>
+                        <li>
+                            <button style="border-radius: 10px" onclick="document.getElementById('id01').style.display='block'">Log in</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="after-head">
+            <div class="option">
+                <span><h2>Get your room mate</h2></span>
+                <div class="search">
+                    <form action="need" class="need">
+                        <label for="need"></label>
+                        <select name="need">
+                            <option value="" disabled selected style="display: none; color: #6c757d ">What do you need
+                            </option>
+                            <option value="0">I need a room</option>
+                            <option value="1">I have a room</option>
+                        </select>
+                    </form>
+                    <form action="" class="need">
+                        <label for="need"></label>
+                        <select name="need">
+                            <option value="" disabled selected style="display: none; color: #6c757d ">location <i
+                                    class=" fa fa-arrow-down"></i></option>
+                            <option>Ibadan</option>
+                            <option>Mayfair</option>
+                            <option>Ibadan</option>
+                        </select>
+                    </form>
+                    <form action="" class="need">
+                        <label for="need"></label>
+                        <select name="need">
+                            <option value="" disabled selected style="display: none; color: #6c757d ">House type
+                            </option>
+                            <option>Hostel</option>
+                            <option>Self contain</option>
+                            <option>Single room</option>
+                            <option>Flat</option>
+                        </select>
+                    </form>
+                    <form action="" class="need">
+                        <label for="need"></label>
+                        <select name="need" id="need">
+                            <option value="" disabled selected style="display: none; color: #6c757d ">price range
+                            </option>
+                            <option>50,000 - 60,000</option>
+                            <option>60,000 - 70,000</option>
+                            <option>80,000 - 100,000</option>
+                            <option>100,000 - 120,000</option>
+                            <option>120,000 - 150,000</option>
+                            <option>150,000 and above</option>
+                        </select>
+                    </form>
+                    <div style="padding-left: 2%" class="need">
+                        <a href="search_resut.html" style="color: white">
+                            <button class="btn btn-primary" style="border-radius:60px;  ">
+                                <i class="fa fa-arrow-right need" style=""></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f0f0f0; text-align: center">
+        23/0ct/2015 G.M.T 13:47
+    </div>
+    <div style="align-content: center;">
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="container" style="padding-left: 5px;" >
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Username" name="username" required>
+                    <br>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <input type="checkbox" checked="checked"> Remember me
+                    <p>Don't have an account? <a href="signup.html">Sign up</a>.</p>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn btn btn-primary">Log in</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <------ carousel------->
+    <div class="caros">
+        <div class="caro">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/img-sign2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/img-sign3.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="image/img-sign4.jpg">
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="caro-text ">
+            <h3>Find Your Perfect Match</h3>
+            <p>Roommates.com is a roommate finder and roommate search service which covers thousands of cities
+                nationwide.
+                Currently, Roommates.com is the Web's most popular roommate matching service, receiving over 50,000
+                visits
+                and 1,000,000 page views per day. Let us help you find the perfect roommate. Become a member now...
+                Free Photo Profile
+                Free 2-way matching
+                Free Power Roommate Search
+                Free to contact potential roommates</p>
+        </div>
+        <div style="padding-top: 200px; text-align: center">
+            <a href="signup.html">
+                <button class="btn btn-primary" style="padding-left: 20px; padding-right: 20px">
+                    <span style="font-size: 20px;">Join for free</span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="testimony">
+        <h2>Our testimonies</h2>
+        <div class="row">
+            <div class="col-md-6 test-left"> "Roommates.com is a roommate finder and roommate search service which
+                covers thousands of cities
+                nationwide.
+                Currently, Roommates.com is the Web's most popular roommate matching service, receiving over 50,000
+                visits
+                and 1,000,000 page views per day. Let us help you find the perfect roommate. Become a member now...
+                Free Photo Profile
+                Free 2-way matching
+                Free Power Roommate Search
+                Free to contact potential roommates"
+            </div>
+            <div class="col-md-6 test-right"> "Roommates.com is a roommate finder and roommate search service which
+                covers thousands of cities
+                nationwide.
+                Currently, Roommates.com is the Web's most popular roommate matching service, receiving over 50,000
+                visits
+                and 1,000,000 page views per day. Let us help you find the perfect roommate. Become a member now...
+                Free Photo Profile
+                Free 2-way matching
+                Free Power Roommate Search
+                Free to contact potential roommates"
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #1d2124">
+        <div >
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="widget" style="color: white; font-size: 16px">
+                                <ul class="address" type="none">
+                                    <li><h3 class="widget-title">Our address</h3></li>
+                                    <li>blaa blaa blaa</li>
+                                    <li><i class="fa fa-map-marker"></i> address</li>
+                                    <li style="padding-right: 3px"><i class="fa fa-phone"></i> telephone</li>
+                                    <li style="padding-right: 3px"><i class="fa fa-envelope"></i> mailing address</li>
+                                </ul>
+                            </div>
+                            <div style="padding-top: 30px">
+                                <a href="#" class="fa fa-facebook"
+                               style="color: white; font-size: 20px; padding-left: 30px; padding-right: 10px"></a>
+                            <a href="#" class="fa fa-twitter"
+                               style="color: white; font-size: 20px;  padding-right: 10px"></a>
+                            <a href="#" class="fa fa-instagram"
+                               style="color: white; font-size: 20px;  padding-right: 10px"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget" style="color: white; font-size: 16px">
+                                <ul class="bullet" type="none">
+                                    <li><a href="#" style="color: white; ">Why us</a></li>
+                                    <li><a href="#" style="color: white; ">Terms of service</a></li>
+                                    <li><a href="#" style="color: white; ">Services</a></li>
+                                    <li><a href="collection.html" style="color: white; ">Collection </a></li>
+                                    <li><a href="#" style="color: white; ">About us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget">
+                                <h3 class="widget-title">Contact us</h3>
+                                <form action="#" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6"><input type="text" placeholder="Your name..." ></div>
+                                        <div class="col-md-6"><input type="text" placeholder="Email..."  ></div>
+                                    </div>
+
+                                    <textarea name="" placeholder="Your message..." style="height: 30px"></textarea><br>
+                                    <input type="submit" value="send message" role="button" class="btn btn-primary" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="colophon" style="text-align: center">Copyright 2017 homies. All right reserved</p>
+                </div><!-- .container -->
+            </footer> <!-- .site-footer -->
+
+        </div>
+    </footer>
+</div>
+<script src="main.js"></script>
+<script src="myjquery.js"></script>
+<script src="boot/popper.js"></script>
+<script src="boot/jquery.js"></script>
+<script src="boot/bootstrap.js"></script>
+</body>
+</html>

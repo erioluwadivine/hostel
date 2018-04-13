@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="boot/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?">
+    <title>room-mates</title>
+</head>
+<body>
+<div class="content">
+    <header>
+        <div>
+            <div class="nav">
+                <h2 style="padding-left: 20px"><a href="index.html">H<span style="color:white;">O</span><span style="color: #82ca9a">O</span><span style="color: #9D81B3">O</span>MIES <i
+                        class="fa fa-home"></i></a></h2>
+                <nav>
+                    <ul type="none">
+                        <li><a href="#" class="fa fa-envelope  fa-envelope-open"></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#">Rent out a room/ Room mates</a></li>
+                        <li>
+                            <button style="border-radius: 10px"
+                                    onclick="document.getElementById('id01').style.display='block'">Log in
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div style="align-content: center">
+            <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="container" style="padding-left: 15px">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <br>
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <input type="checkbox" checked="checked"> Remember me
+                        <p>Don't have an account? <a href="signup.html">Sign up</a>.</p>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="submit" class="signupbtn btn btn-primary">Log in</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div style="padding-top: 50px">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card" style="background-color: #96caf5">
+                    <div class="card-body">
+                        <h5 style="text-align: center">the beginning of chat with consultant A</h5>
+                        <div style="padding: 20px">
+                            <div class="right_message">message recieved
+                        </div>
+                        </div>
+                        <div style="padding-top: 20px">
+                            <div class="left_message">this is the sent
+                        </div>
+                        </div>
+
+                        <form action="" class="card_form" >
+                            <input type="text" placeholder="type message..." >
+                            <button class="fa fa-arrow-right btn btn-primary"
+                                    style="padding: 6px">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
